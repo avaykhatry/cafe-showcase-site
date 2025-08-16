@@ -1,23 +1,304 @@
-[
-  {
-    "id": 1,
-    "name": "Chicken Kebab",
-    "price": 800,
-    "image": "images/kebab-chicken.jpg",
-    "link": "https://shopee.com/example-chicken-kebab"
-  },
-  {
-    "id": 2,
-    "name": "Beef Kebab",
-    "price": 950,
-    "image": "images/kebab-beef.jpg",
-    "link": "https://daraz.com/example-beef-kebab"
-  },
-  {
-    "id": 3,
-    "name": "Matcha Latte",
-    "price": 500,
-    "image": "images/matcha-latte.jpg",
-    "link": "https://etsy.com/example-matcha-latte"
-  }
-]
+{
+  "menu": [
+    {
+      "category": "Curry set 🍛",
+      "items": [
+        {
+          "name": "Children's set",
+          "description": "A set of mild curry for children, served with naan and juice. Safe for small children to eat.",
+          "price": 600
+        },
+        {
+          "name": "Nepali Low Volume Set",
+          "description": "A healthy, low-volume set. A great value plate that lets you enjoy a variety of flavors in a well-balanced way!",
+          "price": 1290
+        },
+        {
+          "name": "Friend special set",
+          "description": "A luxurious set that is perfect for sharing with friends and family.",
+          "price": 1320
+        }
+      ]
+    },
+    {
+      "category": "Curry single item 🍴",
+      "items": [
+        {
+          "name": "Chicken Curry",
+          "description": "A classic curry with chunks of slow-cooked chicken. The aroma of spices will whet your appetite!",
+          "price": 948
+        },
+        {
+          "name": "Mix Veg Curry",
+          "description": "A healthy curry made with plenty of fresh vegetables and spices. The perfect balance of spices and vegetables is what makes it so appealing!",
+          "price": 948
+        },
+        {
+          "name": "Keema Curry",
+          "description": "Juicy minced meat and the aroma of spices are exquisite! A rich curry that goes perfectly with naan or rice.",
+          "price": 984
+        },
+        {
+          "name": "Mix Dal Curry",
+          "description": "A nutritious curry made by slowly simmering several kinds of beans. A healthy dish with an addictive creamy taste.",
+          "price": 948
+        },
+        {
+          "name": "Mutton Curry",
+          "description": "An authentic curry with a deep, rich flavor, with tender mutton slowly simmered in spices.",
+          "price": 1020
+        },
+        {
+          "name": "Spinach Chicken Curry (Sag Chicken Curry)",
+          "description": "A combination of nutritious spinach and tender chicken in a creamy, mild-tasting dish.",
+          "price": 1044
+        },
+        {
+          "name": "Spinach Mutton Curry (Sag Mutton Curry)",
+          "description": "A luxurious curry with rich spinach sauce and flavorful mutton.",
+          "price": 1080
+        },
+        {
+          "name": "Butter Chicken Curry",
+          "description": "A delicious curry with tender chicken in a rich and creamy tomato-based sauce. A popular menu item that is mildly spicy and easy to eat!",
+          "price": 1080
+        },
+        {
+          "name": "Seafood Curry",
+          "description": "A luxurious seafood curry. A game filled with the aroma of spices and seafood!",
+          "price": 1080
+        },
+        {
+          "name": "Eggplant Chicken Curry",
+          "description": "The soft eggplant and spicy chicken go perfectly together! This dish goes great with either naan or rice.",
+          "price": 948
+        },
+        {
+          "name": "Green Curry",
+          "description": "An authentic Thai flavor with the richness of coconut milk and the spicy kick of green chili peppers that will become an addictive taste.",
+          "price": 1080
+        }
+      ]
+    },
+    {
+      "category": "Kebab 🥙",
+      "items": [
+        {
+          "name": "Chicken Sandwich",
+          "description": "A set of sandwich, French fries and cola.",
+          "price": 700
+        },
+        {
+          "name": "Mixed Sandwich",
+          "description": "A set of sandwich, French fries and cola.",
+          "price": 700
+        },
+        {
+          "name": "Beef Sandwich",
+          "description": "A set of sandwich, French fries and cola.",
+          "price": 700
+        },
+        {
+          "name": "Chicken Sandwich (spiced)",
+          "description": "A hearty sandwich made with juicy chicken marinated in spices and sandwiched between fragrant bread.",
+          "price": 700
+        },
+        {
+          "name": "Chicken Snacks",
+          "description": "This is a spicy snack made with flavorful chicken marinated in several types of spices and yogurt.",
+          "price": 600
+        }
+      ]
+    },
+    {
+      "category": "Doner Kebab 🥩",
+      "items": [
+        {
+          "name": "Mixed Sandwich",
+          "description": "This sandwich is filled with colorful ingredients, allowing you to enjoy a variety of flavors.",
+          "price": 600,
+          "tag": "Popular"
+        },
+        {
+          "name": "Beef Sandwich",
+          "description": "This is a satisfying sandwich with the delicious flavor of juicy beef filling your mouth.",
+          "price": 700
+        },
+        {
+          "name": "Chicken Wrap",
+          "description": "This is a simple and stylish wrap sandwich made with savory chicken and fresh vegetables wrapped in a tortilla.",
+          "price": 600
+        },
+        {
+          "name": "Mix Wrap",
+          "description": "These wrap sandwiches are packed with a variety of ingredients and are fun to look at.",
+          "price": 700
+        },
+        {
+          "name": "Beef Wrap",
+          "description": "This is a satisfying wrap sandwich packed with rich beef flavor.",
+          "price": 800,
+          "tag": "Popular"
+        },
+        {
+          "name": "Mixed Snacks",
+          "description": "This is a colorful set of snacks that you can enjoy a little bit of, making it perfect for accompanying your drinks.",
+          "price": 700
+        },
+        {
+          "name": "Beef Snack",
+          "description": "This snack is packed with the delicious flavor of beef and is sure to go well with alcohol.",
+          "price": 800
+        },
+        {
+          "name": "Chicken Kebab Bowl",
+          "description": "This is a hearty rice bowl with spicy chicken that will whet your appetite.",
+          "price": 650,
+          "tag": "Popular"
+        },
+        {
+          "name": "Mixed Kebab Bowl",
+          "description": "This is a great value bowl of rice that allows you to enjoy a variety of kebabs.",
+          "price": 750,
+          "tag": "Popular"
+        },
+        {
+          "name": "Beef Kebab Bowl",
+          "description": "A bowl of rice topped with rich beef flavor and spices, giving you plenty of energy.",
+          "price": 850
+        },
+        {
+          "name": "Chicken Sandwich",
+          "description": "A classic and popular sandwich with juicy chicken sandwiched between soft bread.",
+          "price": 600
+        },
+        {
+          "name": "Mixed Sandwich",
+          "description": "This is a great value variety sandwich that allows you to enjoy a variety of flavors.",
+          "price": 700
+        },
+        {
+          "name": "Beef Sandwich",
+          "description": "This is a luxurious sandwich that allows you to simply enjoy the deliciousness of high-quality beef.",
+          "price": 800
+        }
+      ]
+    },
+    {
+      "category": "Tandoori 🔥",
+      "items": [
+        {
+          "name": "Tandoori Chicken (2 pieces)",
+          "description": "Tandoori chicken marinated in spices and yogurt and slowly cooked to perfection. Crispy on the outside and juicy on the inside!",
+          "price": 550
+        },
+        {
+          "name": "Tandoori Chicken (4 pieces)",
+          "description": "Tandoori chicken marinated in spices and yogurt and slowly cooked to perfection. Crispy on the outside and juicy on the inside!",
+          "price": 1000
+        },
+        {
+          "name": "Chicken Tikka (2 pieces)",
+          "description": "Boneless chicken seasoned with spices and grilled over charcoal. Goes great with beer!",
+          "price": 450,
+          "tag": "Popular"
+        },
+        {
+          "name": "Chicken Tikka (4 pieces)",
+          "description": "Boneless chicken seasoned with spices and grilled over charcoal. Goes great with beer!",
+          "price": 900
+        },
+        {
+          "name": "Tandoori Malai Tikka (4 pieces)",
+          "description": "This mild-tasting chicken is marinated in Meena yogurt sauce and then baked. It's not too spicy and is easy to eat!",
+          "price": 800
+        },
+        {
+          "name": "Tandoori Malai Tikka (2 pieces)",
+          "description": "This mild-tasting chicken is marinated in Meena yogurt sauce and then baked. It's not too spicy and is easy to eat!",
+          "price": 480
+        },
+        {
+          "name": "Seek Kebab (2 pieces)",
+          "description": "A popular dish made with juicy minced meat kneaded with spices and grilled until fragrant. A very satisfying dish!",
+          "price": 500
+        },
+        {
+          "name": "Seek Kebab (4 pieces)",
+          "description": "A popular dish made with juicy minced meat kneaded with spices and grilled until fragrant. A very satisfying dish!",
+          "price": 1000
+        }
+      ]
+    },
+    {
+      "category": "Side menu 🌱",
+      "items": [
+        {
+          "name": "Samosa (2 pieces)",
+          "description": "This set contains two piping hot samosas made from steaming hot potatoes and vegetables seasoned with spices wrapped in fragrant dough and deep-fried.",
+          "price": 550
+        },
+        {
+          "name": "Momo",
+          "description": "Nepalese-style steamed dumplings made with juicy minced meat and spices wrapped in chewy skin.",
+          "price": 600
+        },
+        {
+          "name": "Indian Omlet",
+          "description": "A fluffy Indian-style omelette with the aroma of several types of spices and herbs.",
+          "price": 500
+        },
+        {
+          "name": "Fried Rice",
+          "description": "This is an Indian fried rice made with chicken, vegetables, eggs, etc. stir-fried with spices, giving it a light and fluffy texture.",
+          "price": 700
+        },
+        {
+          "name": "French Fries",
+          "description": "These Indian-style French fries are crispy on the outside and soft and fluffy on the inside, with a fragrant spice flavor.",
+          "price": 300
+        },
+        {
+          "name": "Chicken Kebab Rice Bowl",
+          "description": "This is a satisfying rice bowl made with spicy grilled chicken kebabs served on rice and decorated with vegetables and sauce.",
+          "price": 750
+        },
+        {
+          "name": "Chicken Kebab Roll",
+          "description": "This easy-to-enjoy roll consists of fragrantly grilled chicken kebabs wrapped in thin bread along with vegetables.",
+          "price": 700
+        }
+      ]
+    },
+    {
+      "category": "Soft drinks 🥤",
+      "items": [
+        {
+          "name": "Oolong Tea",
+          "description": "It is a classic tea with a refreshing taste that goes well with meals.",
+          "price": 150
+        },
+        {
+          "name": "Calpis",
+          "description": "This is a lactic acid bacteria drink with a sweet and sour, somewhat nostalgic, gentle taste.",
+          "price": 150
+        },
+        {
+          "name": "Orange Juice",
+          "description": "This fresh, sweet and sour juice is packed with the blessings of the sun.",
+          "price": 150
+        },
+        {
+          "name": "Ginger Ale",
+          "description": "A refreshing carbonated drink with a spicy ginger flavor.",
+          "price": 150
+        },
+        {
+          "name": "Cola",
+          "description": "This classic drink has a refreshing carbonation that will quench your thirst.",
+          "price": 150
+        }
+      ]
+    }
+  ]
+}
