@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Chicken Kebab",
+    "price": 800,
+    "image": "images/kebab-chicken.jpg",
+    "link": "https://shopee.com/example-chicken-kebab"
+  },
+  {
+    "id": 2,
+    "name": "Beef Kebab",
+    "price": 950,
+    "image": "images/kebab-beef.jpg",
+    "link": "https://daraz.com/example-beef-kebab"
+  },
+  {
+    "id": 3,
+    "name": "Matcha Latte",
+    "price": 500,
+    "image": "images/matcha-latte.jpg",
+    "link": "https://etsy.com/example-matcha-latte"
+  }
+]

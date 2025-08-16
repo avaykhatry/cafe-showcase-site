@@ -1,4 +1,202 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #910f3f;
+  --bg-color: #e2e2e2; 
+  --white: #fff;
+  --btn-radius-1: 40px;
+  --inputs-radius-2: 12px;
+  --media-radius: 12px;
+}
+
 body {
-    padding: 0;
-    margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* navbar start */
+.navbar {
+  padding: 10px 3rem 10px 3rem;
+  overflow: hidden;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.navbar a {
+  display: block;
+  color: var(--primary-color);
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a.left {
+  margin-right: auto;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: #000;
+}
+/* navbar end */
+
+/* header start */
+.header {
+  padding: 8px;
+  text-align: center;
+  background: var(--primary-color);
+  color: #fff;
+  font-weight: bold;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+/* header end */
+
+/* hero start */
+
+.hero {
+  background-image: url(/assets/top-view-sushi-rolls-plate-with-sauce-copy-space.jpg);
+  height: 75vh;
+  width: 100%;
+}
+
+.hero-txt {
+  color: var(--bg-color);
+  font-size: 60px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+.hero-button {
+  position: absolute;
+  top: 60%;
+  width: 100%;
+  text-align: center;
+}
+
+.hero-button > button {
+  border-radius: var(--btn-radius-1);
+  padding: 6px 18px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: var(--primary-color);
+  color: var(--white);
+  border: none;
+
+}
+/* hero end */
+
+/* row start */
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(345px, 1fr));
+  gap: 8px;
+  padding: 8px;
+}
+
+.column {
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.row .row-item-1 {
+  background-image: url(/assets/menu.jpg);
+}
+
+.row .row-item-2 {
+  background-image: url(/assets/menu.jpg);
+}
+
+.row .row-item-3 {
+  background-image: url(/assets/location.jpg);
+}
+
+.row .row-item-4 {
+  background-image: url(/assets/about.jpg);
+}
+/* row end */
+
+/* socials start */
+.socials {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 105px;
+  height: 120px;
+}
+
+.socials-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(38px, 1fr));
+  gap: .8rem;
+}
+.socials img {
+  filter: invert(1);
+  width: 38px;
+}
+/* socials end */
+
+.footer {
+  background-image: url(/assets/top-view-sushi-rolls-plate-with-sauce-copy-space.jpg);
+  padding-top: 70px;
+  padding-bottom: 20px;
+  background-position: right;
+}
+
+.footer-inner {
+  max-width: 60%;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-inner h2 {
+    padding: 14px 20px;
+    color: var(--primary-color);
+}
+
+.footer-inner-card {
+  display: flex;
+  gap: .6rem;
+}
+
+.footer-inner-card img{
+  width: 28px;
+  filter: invert(1);
+}
+
+.footer .copyright {
+  font-size: .8rem;
+  text-align: center;
+  color: var(--white);
+}
+/* footer end */
+
+@media screen and (max-width: 760px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
 }
