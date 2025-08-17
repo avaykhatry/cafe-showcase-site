@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         for (let j = 0; j < items[i].items.length; j++) {
           const foodLi = document.createElement("li");
-          foodLi.textContent = items[i].items[j].name;
+          foodLi.textContent = `${items[i].items[j].name} (price: ${items[i].items[j].price})`;
           foodUl.appendChild(foodLi);
         }
 
