@@ -1,7 +1,7 @@
 {
   "menu": [
     {
-      "category": "Curry set 🍛",
+      "category": "Curry set",
       "items": [
         {
           "name": "Children's set",
@@ -21,7 +21,7 @@
       ]
     },
     {
-      "category": "Curry single item 🍴",
+      "category": "Curry single item",
       "items": [
         {
           "name": "Chicken Curry",
@@ -81,7 +81,7 @@
       ]
     },
     {
-      "category": "Kebab 🥙",
+      "category": "Kebab",
       "items": [
         {
           "name": "Chicken Sandwich",
@@ -111,7 +111,7 @@
       ]
     },
     {
-      "category": "Doner Kebab 🥩",
+      "category": "Doner Kebab",
       "items": [
         {
           "name": "Mixed Sandwich",
@@ -185,7 +185,7 @@
       ]
     },
     {
-      "category": "Tandoori 🔥",
+      "category": "Tandoori",
       "items": [
         {
           "name": "Tandoori Chicken (2 pieces)",
@@ -231,7 +231,7 @@
       ]
     },
     {
-      "category": "Side menu 🌱",
+      "category": "Side menu",
       "items": [
         {
           "name": "Samosa (2 pieces)",
@@ -271,7 +271,7 @@
       ]
     },
     {
-      "category": "Soft drinks 🥤",
+      "category": "Soft drinks",
       "items": [
         {
           "name": "Oolong Tea",
