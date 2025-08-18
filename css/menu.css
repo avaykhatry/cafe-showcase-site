@@ -1,3 +1,14 @@
-#category-nav a {
-    text-decoration: none;
+body {
+    position: relative;
+}
+
+#category-nav {
+    position: sticky;
+    top: 0;
+}
+
+.item-list-inner {
+    width: 100%;
+    border: 1px solid hotpink;
+    text-align: center;
 }
