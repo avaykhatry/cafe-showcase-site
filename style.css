@@ -207,6 +207,11 @@ body {
 .row .row-item-4 {
   background-image: url(/assets/about.jpg);
 }
+
+.row-btn a {
+  text-decoration: none;
+  color: var(--bg-color)
+}
 /* main content/row end */
 
 /* menu page start */
@@ -388,10 +393,14 @@ body {
 .gallery {
   max-width: 90vw;
   margin: auto;
+  margin-bottom: 3rem;
+  margin-top: 1.2rem;
 }
 
 .gallery-inner img {
   display: block;
+  width: 100%;
+  margin-bottom: 1em;
 }
 
 .gallery-inner {
@@ -492,13 +501,35 @@ body {
 }
 
 .footer .copyright {
+  margin-top: 2rem;
   font-size: 0.8rem;
   text-align: center;
   color: var(--bg-color);
 }
 /* footer end */
 
+@media screen and (max-width: 928px) {
+  .footer-inner {
+  justify-content: center;  
+}
+
+  #category-nav {
+    gap: 1rem;
+  }
+
+  #category-nav a {
+    font-size: 16px;
+  }
+}
+
 @media screen and (max-width: 760px) {
+    #category-nav {
+    gap: .8rem;
+  }
+
+  #category-nav a {
+    font-size: 14px;
+  }
   .row {
     grid-template-columns: 1fr;
   }
@@ -523,9 +554,22 @@ body {
   .hideOnMobile {
     display: none !important;
   }
+
+ .about-txt {
+  margin: 8px;
+ }
 }
 
 @media screen and (max-width: 400px) {
+   #category-nav {
+    gap: .5rem;
+  }
+  #category-nav a {
+    font-size: 11px;
+  }
+   .about-txt {
+  font-size: 1.2rem;
+ }
   .hero-txt {
     font-size: 40px;
   }
