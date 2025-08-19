@@ -23,11 +23,11 @@ body {
 
 /* navbar start */
 .navbar {
-  padding: 10px 3rem 10px 3rem;
+  padding: 10px 3rem;
   overflow: hidden;
   background: var(--bg-color);
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -307,6 +307,98 @@ body {
 
 /* menu page end */
 
+/* location start */
+.map-outer {
+  max-width: 90vw;
+  margin: auto;
+  height: 60vh;
+  overflow: hidden;
+  margin-bottom: 4rem;
+}
+
+.title {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 2.6rem;
+  line-height: 1.6;
+}
+
+.map {
+  height: 100%;
+}
+/* location end */
+
+/* about start */
+.about-hero {
+  background-image: url("/assets/about.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100%;
+}
+
+.about-txt {
+  color: var(--bg-color);
+  font-size: 1.4rem;
+  position: absolute;
+  top: 45%;
+  max-width: 100%;
+  text-align: center;
+  z-index: 1;
+  margin-right: 8rem;
+  margin-left: 8rem;
+  line-height: 1.36;
+  font-weight: 100;
+}
+
+.about-main {
+  max-width: 80vw;
+  margin: auto;
+  margin-bottom: 1.8rem;
+}
+
+.about-main .about-body {
+  line-height: 1.123;
+  text-align: center;
+  margin: 1rem;
+  font-size: 1.14rem;
+}
+
+.founder {
+  max-width: 80vw;
+  margin: auto;
+  margin-top: 1.8rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  /* margin-bottom: 1.8rem; */
+}
+
+.inner-founder img {
+  width: auto;
+  height: 350px;
+}
+
+.founder-details {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+/* about end */
+
+/* gallery start */
+
+.gallery {
+  max-width: 90vw;
+  margin: auto;
+}
+
+.gallery-inner img {
+  display: block;
+}
+
+.gallery-inner {
+  columns: 300px;
+}
+/* gallery end */
+
 /* socials start */
 .socials {
   position: fixed;
@@ -341,6 +433,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .opening-contact {
@@ -409,7 +502,50 @@ body {
   .row {
     grid-template-columns: 1fr;
   }
+
+  .navbar {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .navbar h2 {
+    font-size: 18px;
+  }
+
+  .hero-txt {
+    font-size: 44px;
+  }
+
+  .ham-menu {
+    display: flex !important;
+  }
+
+  .hideOnMobile {
+    display: none !important;
+  }
 }
 
 @media screen and (max-width: 400px) {
+  .hero-txt {
+    font-size: 40px;
+  }
+
+  .opening-contact {
+    max-width: 95%;
+  }
+  .opening-contact h2 {
+    font-size: 1.1 rem;
+  }
+
+  .socials {
+    width: 35px;
+  }
+
+  .socials-items {
+    gap: 0.4rem;
+  }
+  .socials img {
+    width: 28px;
+    filter: invert(0);
+  }
 }

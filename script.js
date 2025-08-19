@@ -1,4 +1,23 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+  async function loadComponent(id, file) {
+    const response = await fetch(file);
+    const html = await response.text();
+    document.getElementById(id).innerHTML = html;
+  }
+
+  // if (id === "navbar") {
+  //   if ((document.querySelector(".ham-menu")) && (document.querySelector(".side-navbar"))) {
+  //     document.querySelector(".ham-menu").addEventListener("click", function() {
+  //          document.querySelector(".side-navbar").classList.toggle("active");
+  //      });
+  //   } 
+  // }
+
+  loadComponent("navbar", "/html/navbar.html");
+  loadComponent("footer", "/html/footer.html");
+
+
   fetch("/products.json")
     .then((response) => response.json())
     .then((product) => {
