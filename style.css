@@ -240,7 +240,10 @@ body {
 #menu-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  max-width: 90vw;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
 }
 
 #menu-list li ul {
@@ -251,21 +254,22 @@ body {
 
 .category-label {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.55rem;
   color: var(--primary-color);
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .item-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.4rem;
 }
 
 .item-list-inner {
+  padding: 1rem;
   margin: 1rem;
-  background: var(--bg-color);
   width: 100%;
-  border: 1px solid hotpink;
   text-align: center;
   border-radius: var(--media-radius);
   transition: transform 0.23s ease, box-shadow 0.23s ease;
@@ -273,7 +277,7 @@ body {
 
 .item-list-inner:hover {
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
-  transform: scale(1.05);
+  transform: scale(1.01);
 }
 
 .item-list-inner:active {
@@ -287,6 +291,18 @@ body {
   border-top-left-radius: var(--media-radius);
   border-top-right-radius: var(--media-radius);
 }
+
+.food-name-list {
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.food-price-list {
+  line-height: 1.2;
+  font-size: 14px;
+  font-weight: bold;
+}
+
 /* menu items end */
 
 /* menu page end */

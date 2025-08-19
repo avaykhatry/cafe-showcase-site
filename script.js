@@ -53,8 +53,8 @@ document.addEventListener("DOMContentLoaded", function () {
           foodBuyLi.classList.add("food-cta-list");
 
           foodNameLi.textContent = `${items[i].items[j].name}`;
-          foodPriceLi.textContent = `${items[i].items[j].price} Yen`;
-          foodBuyLi.textContent = `Add to cart`;
+          foodPriceLi.textContent = `¥${items[i].items[j].price}`;
+          // foodBuyLi.textContent = `Add to cart`;
 
           foodUlUl.appendChild(foodImgLi);
           foodUlUl.appendChild(foodNameLi);

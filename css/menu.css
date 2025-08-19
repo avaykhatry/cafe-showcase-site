@@ -5,10 +5,6 @@ body {
 #category-nav {
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
-.item-list-inner {
-    width: 100%;
-    border: 1px solid hotpink;
-    text-align: center;
-}
