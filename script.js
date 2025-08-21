@@ -4,22 +4,22 @@ window.onload = () => {
     const html = await response.text();
     document.getElementById(id).innerHTML = html;
 
-  //   if (id === "navbar") {
-  //   const hamMenu = document.getElementById("ham-menu");
-  //   const sideNavbar = document.querySelector(".side-navbar");
+    //   if (id === "navbar") {
+    //   const hamMenu = document.getElementById("ham-menu");
+    //   const sideNavbar = document.querySelector(".side-navbar");
 
-  //   if (hamMenu && sideNavbar) {
-  //     hamMenu.addEventListener("click", function () {
-  //       sideNavbar.classList.toggle("active");
-  //     });
-  //   }
-  // }
+    //   if (hamMenu && sideNavbar) {
+    //     hamMenu.addEventListener("click", function () {
+    //       sideNavbar.classList.toggle("active");
+    //     });
+    //   }
+    // }
   }
 
   loadComponent("navbar", "/html/navbar.html");
   loadComponent("footer", "/html/footer.html");
 
-  document.addEventListener("click", function(e) {
+  document.addEventListener("click", function (e) {
     if (e.target.closest("#ham-menu")) {
       document.querySelector(".side-navbar").classList.toggle("active");
     }
@@ -34,7 +34,7 @@ window.onload = () => {
         // category li
         const categoryLi = document.createElement("li");
         categoryLi.id = `category-${i}`;
-        
+
         // food items category title
         const categoryText = document.createElement("div");
         categoryText.textContent = items[i].category;
@@ -48,11 +48,11 @@ window.onload = () => {
         categoryNavLink.textContent = items[i].category;
 
         document.querySelector("#category-nav").appendChild(categoryNavLink);
-        
+
         // ul for food items
         const foodUl = document.createElement("ul");
         foodUl.classList.add("item-list");
-        
+
         for (let j = 0; j < items[i].items.length; j++) {
           const foodUlUl = document.createElement("ul");
           foodUlUl.classList.add("item-list-inner");
@@ -60,11 +60,13 @@ window.onload = () => {
           const foodNameLi = document.createElement("li");
           foodNameLi.id = `name-${j}`;
           foodNameLi.classList.add("food-name-list");
-          
+          foodNameLi.textContent = items[i].items[j].name;
+
           const foodPriceLi = document.createElement("li");
           foodPriceLi.id = `price-${j}`;
           foodPriceLi.classList.add("food-price-list");
-          
+          foodPriceLi.textContent = `¥${items[i].items[j].price}`;
+
           const foodImgLi = document.createElement("img");
           foodImgLi.id = `img-${j}`;
           foodImgLi.classList.add("food-img");
@@ -75,16 +77,13 @@ window.onload = () => {
           foodBuyLi.id = `cart-${j}`;
           foodBuyLi.classList.add("food-cta-list");
 
-          foodNameLi.textContent = `${items[i].items[j].name}`;
-          foodPriceLi.textContent = `¥${items[i].items[j].price}`;
-
           foodUlUl.appendChild(foodImgLi);
           foodUlUl.appendChild(foodNameLi);
           foodUlUl.appendChild(foodPriceLi);
           foodUlUl.appendChild(foodBuyLi);
-          categoryLi.appendChild(foodUl);
           foodUl.appendChild(foodUlUl);
         }
+        categoryLi.appendChild(foodUl);
 
         document.querySelector("#menu-list").appendChild(categoryLi);
       }

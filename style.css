@@ -22,6 +22,11 @@ body {
 }
 
 /* navbar start */
+
+#navbar {
+  min-height: 70px;
+}
+
 .navbar {
   padding: 10px 3rem;
   overflow: hidden;
@@ -446,6 +451,10 @@ body {
 }
 /* socials end */
 
+#footer {
+  min-height: 350px;
+}
+
 .footer {
   background-image: url(/assets/top-view-sushi-rolls-plate-with-sauce-copy-space.jpg);
   padding-top: 70px;
@@ -526,6 +535,12 @@ body {
 }
 /* footer end */
 
+@media screen and (max-width: 999px) {
+    .navbar {
+    padding: 0px;
+    margin: 0px;
+  }
+}
 @media screen and (max-width: 928px) {
   .footer-inner {
     justify-content: center;
@@ -535,9 +550,14 @@ body {
     gap: 1rem;
   }
 
-  #category-nav a {
-    font-size: 16px;
+  .ham-menu {
+    display: flex !important;
   }
+
+  .hideOnMobile {
+    display: none !important;
+  }
+
 }
 
 @media screen and (max-width: 760px) {
@@ -552,25 +572,8 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .navbar {
-    padding: 0px;
-    margin: 0px;
-  }
-
-  .navbar h2 {
-    font-size: 18px;
-  }
-
   .hero-txt {
     font-size: 44px;
-  }
-
-  .ham-menu {
-    display: flex !important;
-  }
-
-  .hideOnMobile {
-    display: none !important;
   }
 
   .about-txt {
@@ -579,6 +582,10 @@ body {
 }
 
 @media screen and (max-width: 400px) {
+
+  .navbar h2 {
+    font-size: 20px;
+  }
   #category-nav {
     gap: 0.5rem;
   }
