@@ -48,6 +48,24 @@ body {
   background: #ddd;
   color: #000;
 }
+
+.wolt {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.78;
+}
+
+.wolt > a {
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: lightblue;
+}
+
+.wolt a:hover {
+  color: blue;
+  text-decoration: 2.2px solid underline;
+}
 /* navbar end */
 
 /* header start */
@@ -210,7 +228,7 @@ body {
 
 .row-btn a {
   text-decoration: none;
-  color: var(--bg-color)
+  color: var(--bg-color);
 }
 /* main content/row end */
 
@@ -414,7 +432,7 @@ body {
   bottom: 0;
   right: 0;
   width: 108px;
-  height: 60px;
+  height: 74px;
 }
 
 .socials-items {
@@ -510,8 +528,8 @@ body {
 
 @media screen and (max-width: 928px) {
   .footer-inner {
-  justify-content: center;  
-}
+    justify-content: center;
+  }
 
   #category-nav {
     gap: 1rem;
@@ -523,8 +541,8 @@ body {
 }
 
 @media screen and (max-width: 760px) {
-    #category-nav {
-    gap: .8rem;
+  #category-nav {
+    gap: 0.8rem;
   }
 
   #category-nav a {
@@ -555,21 +573,21 @@ body {
     display: none !important;
   }
 
- .about-txt {
-  margin: 8px;
- }
+  .about-txt {
+    margin: 8px;
+  }
 }
 
 @media screen and (max-width: 400px) {
-   #category-nav {
-    gap: .5rem;
+  #category-nav {
+    gap: 0.5rem;
   }
   #category-nav a {
     font-size: 11px;
   }
-   .about-txt {
-  font-size: 1.2rem;
- }
+  .about-txt {
+    font-size: 1.2rem;
+  }
   .hero-txt {
     font-size: 40px;
   }

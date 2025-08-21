@@ -35,11 +35,18 @@
     line-height: 1.99;
 }
 
+.side-navbar > :first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .6rem;
+}
+
 .side-navbar a:hover{
     width: 100%;
     background: rgba(2, 2, 2, 0.2);
 }
 
-.side-navbar.active {
+.active {
     display: flex !important;
 }

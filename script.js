@@ -1,22 +1,29 @@
-document.addEventListener("DOMContentLoaded", function () {
-
+window.onload = () => {
   async function loadComponent(id, file) {
     const response = await fetch(file);
     const html = await response.text();
     document.getElementById(id).innerHTML = html;
-  }
 
-  // if (id === "navbar") {
-  //   if ((document.querySelector(".ham-menu")) && (document.querySelector(".side-navbar"))) {
-  //     document.querySelector(".ham-menu").addEventListener("click", function() {
-  //          document.querySelector(".side-navbar").classList.toggle("active");
-  //      });
-  //   } 
+  //   if (id === "navbar") {
+  //   const hamMenu = document.getElementById("ham-menu");
+  //   const sideNavbar = document.querySelector(".side-navbar");
+
+  //   if (hamMenu && sideNavbar) {
+  //     hamMenu.addEventListener("click", function () {
+  //       sideNavbar.classList.toggle("active");
+  //     });
+  //   }
   // }
+  }
 
   loadComponent("navbar", "/html/navbar.html");
   loadComponent("footer", "/html/footer.html");
 
+  document.addEventListener("click", function(e) {
+    if (e.target.closest("#ham-menu")) {
+      document.querySelector(".side-navbar").classList.toggle("active");
+    }
+  });
 
   fetch("/products.json")
     .then((response) => response.json())
@@ -34,7 +41,6 @@ document.addEventListener("DOMContentLoaded", function () {
         categoryText.classList.add("category-label");
 
         categoryLi.appendChild(categoryText);
-        // categoryLi.textContent = items[i].category;
 
         // nav link
         const categoryNavLink = document.createElement("a");
@@ -48,11 +54,9 @@ document.addEventListener("DOMContentLoaded", function () {
         foodUl.classList.add("item-list");
         
         for (let j = 0; j < items[i].items.length; j++) {
-          // ul for food items
           const foodUlUl = document.createElement("ul");
           foodUlUl.classList.add("item-list-inner");
 
-          
           const foodNameLi = document.createElement("li");
           foodNameLi.id = `name-${j}`;
           foodNameLi.classList.add("food-name-list");
@@ -73,7 +77,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
           foodNameLi.textContent = `${items[i].items[j].name}`;
           foodPriceLi.textContent = `¥${items[i].items[j].price}`;
-          // foodBuyLi.textContent = `Add to cart`;
 
           foodUlUl.appendChild(foodImgLi);
           foodUlUl.appendChild(foodNameLi);
@@ -83,10 +86,8 @@ document.addEventListener("DOMContentLoaded", function () {
           foodUl.appendChild(foodUlUl);
         }
 
-        // food ul attached to category li
-
         document.querySelector("#menu-list").appendChild(categoryLi);
       }
     })
     .catch((error) => console.error("Error loading JSON:", error));
-});
+};
